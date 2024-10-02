@@ -7,3 +7,6 @@ Chaotic Club builds tools to help build valuable resource among communitys.
 
 ## Contributing
 Coming soon...
+
+## Socials
+More yet to come..
