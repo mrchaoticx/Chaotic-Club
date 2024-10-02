@@ -7,6 +7,3 @@ Chaotic Club build tools and finds honorable communitys to work with and put out
 
 ## Contributing
 Coming soon...
-
-## API
-Coming soon...
