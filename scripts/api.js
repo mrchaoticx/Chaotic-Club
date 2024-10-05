@@ -12,7 +12,8 @@ addEventListener("DOMContentLoaded", (event) => {
     console.error(`Element with ID ${data.cid} not found.`);
   } else {
     let article = urlParams.get('key');
-    let pre = `${data.pre}${article}`;
+    let pre = `${data.pre}${article}${"/index.md"}`;
+    console.log(pre)
 
     fetch(pre)
       .then(response => {
