@@ -6,4 +6,4 @@ Luram ipsum.
 ## there
 
 
-![thing](./ab1.jpeg))
+![thing](/ab1.jpg))
