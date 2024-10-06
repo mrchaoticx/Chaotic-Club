@@ -6,4 +6,4 @@ Luram ipsum.
 ## there
 
 
-![thing](/ab1.jpg))
+![thing](articles/test/ab1.jpg))
