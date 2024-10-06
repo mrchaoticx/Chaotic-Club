@@ -6,4 +6,4 @@ Luram ipsum.
 ## there
 
 
-![thing](articles/test/ab1.jpg))
+![thing](ab1.jpg))
