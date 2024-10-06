@@ -1,4 +1,4 @@
-addEventListener("DOMContentLoaded", (event) => {
+addEventListener(`DOMContentLoaded`, (event) => {
   const data = {
     "pre": "https://mrchaoticx.github.io/Chaotic-Club/articles/",
     "cid": "content"
@@ -12,7 +12,7 @@ addEventListener("DOMContentLoaded", (event) => {
     console.error(`Element with ID ${data.cid} not found.`);
   } else {
     let article = urlParams.get('key');
-    let pre = `${data.pre}${article}${"/index.md"}`;
+    let pre = `${data.pre}${article}${`/index.md`}`;
     console.log(pre)
 
     fetch(pre)
@@ -23,7 +23,7 @@ addEventListener("DOMContentLoaded", (event) => {
         return response.text();
       })
       .then(content => {
-        console.log("Res:", content);
+        console.log(`Res:`, content);
         contentID.innerHTML = marked.parse(content);
       })
       .catch(error => {
