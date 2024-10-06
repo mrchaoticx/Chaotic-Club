@@ -32,3 +32,11 @@ addEventListener("DOMContentLoaded", (event) => {
       });
   }
 });
+
+function initializeHeaders() {
+  setTimeout(() => {
+      document.dispatchEvent(new Event('apiContentLoaded')); 
+  }, 100);
+}
+
+initializeHeaders();
