@@ -26,6 +26,7 @@ addEventListener("DOMContentLoaded", (event) => {
         console.log("Res:", content);
         contentID.innerHTML = marked.parse(content);
         
+        document.dispatchEvent(new Event('apiContentLoaded'));
         modifyImageSources(urlParams);
       })
       .catch(error => {
