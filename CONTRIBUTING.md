@@ -1,4 +1,4 @@
-# How to Contribute to Our GitHub Site
+# How to Contribute
 
 Thank you for wanting to contribute! Follow these simple steps to add your article to our GitHub site.
 
