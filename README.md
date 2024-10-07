@@ -6,7 +6,7 @@ Publishing and contiburing sourced with Github.
 Chaotic Club builds tools to help build valuable resource among communitys.
 
 ## Contributing
-Coming soon...
+Follow our contributing guide online or here on Github!
 
 ## Socials
 More yet to come..
