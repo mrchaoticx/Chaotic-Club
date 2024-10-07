@@ -1,9 +1,9 @@
-addEventListener(`DOMContentLoaded`, (event) => {
-  const data = {
-    "pre": "https://mrchaoticx.github.io/Chaotic-Club/articles/",
-    "cid": "content"
-  };
+const data = {
+  "pre": "https://mrchaoticx.github.io/Chaotic-Club/articles/",
+  "cid": "content"
+};
 
+addEventListener("DOMContentLoaded", (event) => {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const contentID = document.getElementById(data.cid);
@@ -12,8 +12,8 @@ addEventListener(`DOMContentLoaded`, (event) => {
     console.error(`Element with ID ${data.cid} not found.`);
   } else {
     let article = urlParams.get('key');
-    let pre = `${data.pre}${article}${`/index.md`}`;
-    console.log(pre)
+    let pre = `${data.pre}${article}${"/index.md"}`;
+    console.log(pre);
 
     fetch(pre)
       .then(response => {
@@ -23,8 +23,10 @@ addEventListener(`DOMContentLoaded`, (event) => {
         return response.text();
       })
       .then(content => {
-        console.log(`Res:`, content);
+        console.log("Res:", content);
         contentID.innerHTML = marked.parse(content);
+        
+        modifyImageSources(urlParams);
       })
       .catch(error => {
         console.error("Error fetching article:", error);
@@ -33,10 +35,14 @@ addEventListener(`DOMContentLoaded`, (event) => {
   }
 });
 
-function initializeHeaders() {
-  setTimeout(() => {
-      document.dispatchEvent(new Event('apiContentLoaded')); 
-  }, 100);
-}
+function modifyImageSources(urlParams) {
+  let directory = urlParams.get('key');
+  const stringToAdd = `${data.pre}${directory}/`;
+  const elementsWithSrc = document.querySelectorAll('[src]');
 
-initializeHeaders();
+  elementsWithSrc.forEach(element => {
+    const currentSrc = element.getAttribute('src');
+    const newSrc = stringToAdd + currentSrc;
+    element.setAttribute('src', newSrc);
+  });
+}
