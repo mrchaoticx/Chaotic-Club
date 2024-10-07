@@ -18,7 +18,7 @@ addEventListener("DOMContentLoaded", (event) => {
     fetch(pre)
       .then(response => {
         if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
+          throw new Error(`Oops!`);
         }
         return response.text();
       })
@@ -31,7 +31,7 @@ addEventListener("DOMContentLoaded", (event) => {
       })
       .catch(error => {
         console.error("Error fetching article:", error);
-        contentID.innerHTML = `<h1>${error.message}</h1><p></p>`;
+        contentID.innerHTML = `<h1>Oops!</h1><p>Article does not exist or we had trouble finding that directory.</p>`;
       });
   }
 });
