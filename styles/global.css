@@ -59,7 +59,8 @@ p {
 .dropdown:hover .dropbtn {background-color: var(--main-hover);}
 
 .content  {
-    max-width: 60%;
+    max-width: fit-content;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
 }
