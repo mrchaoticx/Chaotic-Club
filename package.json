@@ -1,0 +1,25 @@
+{
+    "name": "chaotic-club",
+    "version": "1.0.0",
+    "description": "A website produced for liable resources.",
+    "main": "api/selection.js",
+    "scripts": {
+      "start": "node api/selection.js",
+      "dev": "nodemon api/selection.js"
+    },
+    "keywords": [
+      "cited",
+      "resources",
+      "articles"
+    ],
+    "author": "none",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/mrchaoticx/chaotic-club.git"
+    },
+    "dependencies": {
+      "nodemon": "^2.0.22"
+    }
+  }
+  
