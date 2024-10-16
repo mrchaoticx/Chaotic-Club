@@ -1,5 +1,7 @@
 :root {
     --main:#030303;
+    --main-sub: lightgreen;
+    --main-sub2: rgb(75, 168, 75);
     --main-hover:#202020d0;
     --text-btn: white;
     --content: #fff3f3;
@@ -33,7 +35,8 @@ p {
     padding: 16px;
     font-size: 16px;
     border: none;
-    width: 10%;
+    width: 5%;
+    color: rgb(55, 173, 55);
 }
 
 .dropdown-content {
@@ -63,4 +66,64 @@ p {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.banner {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 4vw;
+    text-align: center;
+}
+
+.re {
+    padding: 12px 20px; 
+    border: none; 
+    border-radius: 25px; 
+    background-color: lightgreen; 
+    color: white;
+    font-size: 16px; 
+    transition: background-color 0.3s; 
+    margin-left: 5px;
+}
+
+.re:hover {
+    background-color: #126e2e;
+}
+
+.article-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* space between articles */
+    justify-content: center; /* centers the articles */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    width: 30vw; /* ensure this is set consistently */
+    max-width: 300px; /* optional: max width for larger screens */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.article h2 {
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.article a {
+    text-decoration: none;
+    color: var(--main-sub2);
+}
+
+.footer {
+    padding: 4px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
