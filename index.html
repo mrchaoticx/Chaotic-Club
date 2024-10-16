@@ -29,7 +29,13 @@
         </div>
     </div>
     <h2 style="text-align: center;">Articles</h2>
-    <div id="article-container" class="article-container"></div>
+    <div id="article-container" class="article-container"><div class="article"><h2>hi</h2><a href="articles\hi/index.md" target="_blank">hi</a></div><div class="article"><h2>test</h2><a href="articles\test/index.md" target="_blank">test</a></div></div>
     <div class="footer"><p>Copyright Chaotic-Club 2024</p></div>
+    <script>
+      window.onload = async () => {
+          const response = await fetch('/api/updateIndex');
+          console.log(data.message);
+      };
+  </script>
   </body>
 </html>
