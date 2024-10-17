@@ -24,7 +24,7 @@ async function updateIndex() {
             const itemPath = path.join('articles', item);
             const stats = await fs.stat(path.join(directoryPath, item));
             if (stats.isDirectory()) {
-                newListItems += `<div class="article"><h2>${item}</h2><a href="article.html?key=${itemPath}/index.md" target="_blank">${item}</a></div>`
+                newListItems += `<div class="article"><h2>${item}</h2><a href="article.html?key=${item}" target="_blank">${item}</a></div>`
             }
         }
 
