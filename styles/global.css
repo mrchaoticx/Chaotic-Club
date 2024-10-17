@@ -91,34 +91,6 @@ p {
     background-color: #126e2e;
 }
 
-.article-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* space between articles */
-    justify-content: center; /* centers the articles */
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.article {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 15px;
-    width: 30vw; /* ensure this is set consistently */
-    max-width: 300px; /* optional: max width for larger screens */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.article h2 {
-    font-size: 20px;
-    margin: 0 0 10px;
-}
-
-.article a {
-    text-decoration: none;
-    color: var(--main-sub2);
-}
-
 .footer {
     padding: 4px;
     text-align: center;
