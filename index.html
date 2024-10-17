@@ -5,16 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chaotic Club</title>
     <link rel="stylesheet" href="styles/global.css"/>
+    <script src="scripts/search.js"></script>
     <link rel="stylesheet" href="styles/article-menu.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <style>
+      .hidden {
+          display: none;
+      }
+    </style>
   </head>
   <body>
     <div class="wrapper">
       <div class="header">
         <div class="dropdown">
-          <button class="dropbtn">+</button>
+          <button class="dropbtn">=</button>
           <div class="dropdown-content">
             <a href="article.html">Articles</a>
             <a href="index.html">Home</a>
@@ -30,7 +36,9 @@
         </div>
     </div>
     <h2 style="text-align: center;">Articles</h2>
-    <div id="article-container" class="article-container"><div class="article"><h2>example</h2><a href="article.html?key=example" target="_blank">example</a></div></div></div></div>
+    <input type="text" id="searchInput" class="search" placeholder="Search articles..." onkeyup="filterArticles()">
+    <div id="article-container" class="article-container"><div class="article"><h2>example</h2><a href="article.html?key=example" target="_blank">example</a></div><div class="article"><h2>test</h2><a href="article.html?key=test" target="_blank">test</a></div></div>
     <div class="footer"><p>Copyright Chaotic-Club 2024</p></div>
   </body>
 </html>
+
